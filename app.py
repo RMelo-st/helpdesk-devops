@@ -1,8 +1,11 @@
+import os
+
 from flask import Flask, request, jsonify, render_template, redirect
 from models import db, Chamado
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = (
-    "postgresql://admin:admin123@localhost:5432/helpdesk"
+app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv(
+"DATABASE_URL",
+"postgresql://admin:admin123@localhost:5432/helpdesk"
 )
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db.init_app(app)
@@ -77,8 +80,11 @@ def deletar_chamado(id):
     db.session.commit()
     return "", 204
 if __name__ == "__main__":
+
+    port = int(os.getenv("PORT", 5000))
+
     app.run(
         host="0.0.0.0",
-        port=5000,
+        port=port,
         debug=True
-    )
+)
