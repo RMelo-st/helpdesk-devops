@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify, render_template, redirect
 from models import db, Chamado
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///helpdesk.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = (
+    "postgresql://admin:admin123@localhost:5432/helpdesk"
+)
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db.init_app(app)
 with app.app_context():
