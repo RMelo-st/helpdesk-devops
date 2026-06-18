@@ -137,7 +137,7 @@ docker exec -it helpdesk-api /bin/bash
 ```
 ## 📊 Logs e Outputs
 
-### Exemplo de Logs da Aplicação
+### Exemplo conceitual de Logs da Aplicação
 
 ```text
 [2026-06-18 10:30:45] INFO: Iniciando aplicação HelpDesk
