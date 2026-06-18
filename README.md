@@ -41,7 +41,7 @@ Este projeto acadêmico foi desenvolvido para demonstrar conceitos fundamentais 
 | Tecnologia | Versão | Finalidade |
 |------------|---------|------------|
 | Python | 3.12 | Linguagem de programação |
-| Flask | 2.3.x | Framework web |
+| Flask | 3.1.3 | Framework web |
 | SQLAlchemy | 2.0.x | ORM para banco de dados |
 | SQLite | 3.x | Banco de dados leve |
 | Docker | 24.x | Containerização |
