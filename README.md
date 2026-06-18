@@ -1,5 +1,7 @@
 # 🚀 HelpDesk DevOps - Sistema de Gerenciamento de Chamados Técnicos
 
+# O sistema de chamados foi desenvolvido apenas como aplicação de apoio para demonstrar o uso de Git, GitHub e Docker em um cenário prático. O foco principal do projeto é o estudo de versionamento, containerização e publicação de aplicações.
+
 ## 🐳 O que é Docker?
 
 O Docker é uma plataforma de código aberto utilizada para desenvolver, distribuir e executar aplicações em ambientes isolados chamados **containers**. Esses containers empacotam a aplicação juntamente com todas as suas dependências, bibliotecas e configurações necessárias para execução, garantindo que o software funcione da mesma forma em diferentes ambientes.
@@ -44,7 +46,9 @@ Este projeto acadêmico foi desenvolvido para demonstrar conceitos fundamentais 
 | Flask | 3.1.3 | Framework web |
 | SQLAlchemy | 2.0.x | ORM para banco de dados |
 | SQLite | 3.x | Banco de dados leve |
+ PostgreSQL | 16 | Banco de dados utilizado a partir da versão v1.1.0 |
 | Docker | 24.x | Containerização |
+| Docker Compose | 2.x | Orquestração dos containers |
 | Git | 2.x | Controle de versão |
 | GitHub | - | Hospedagem de código |
 
@@ -156,7 +160,7 @@ docker exec -it helpdesk-api /bin/bash
   "titulo": "Problema no sistema",
   "descricao": "Sistema apresentando lentidão",
   "status": "Aberto",
-  "data_criacao": "2026-06-18T10:30:50"
+  "data_abertura": "2026-06-18T10:30:50"
 }
 ```
 
