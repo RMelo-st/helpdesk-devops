@@ -1,6 +1,6 @@
 # 🚀 HelpDesk DevOps - Sistema de Gerenciamento de Chamados Técnicos
 
-# O sistema de chamados foi desenvolvido apenas como aplicação de apoio para demonstrar o uso de Git, GitHub e Docker em um cenário prático. O foco principal do projeto é o estudo de versionamento, containerização e publicação de aplicações.
+O sistema de chamados foi desenvolvido apenas como aplicação de apoio para demonstrar o uso de Git, GitHub e Docker em um cenário prático. O foco principal do projeto é o estudo de versionamento, containerização e publicação de aplicações.
 
 ## 🐳 O que é Docker?
 
