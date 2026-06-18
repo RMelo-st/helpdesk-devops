@@ -17,7 +17,7 @@ Os containers são leves, portáveis e compartilham o sistema operacional do hos
 
 **Para Saber Mais**:
 
-Caso deseje aprofundar seus conhecimentos sobre Docker, sua arquitetura e o funcionamento dos containers, consulte os materiais abaixo:
+Caso deseje conhecer mais sobre Docker, sua arquitetura e o funcionamento dos containers, consulte os materiais abaixo:
 
 - Documentação oficial do Docker: https://docs.docker.com/get-started/docker-overview/
 - Docker Desktop (ferramenta utilizada durante o desenvolvimento e execução do projeto): https://docs.docker.com/desktop/
