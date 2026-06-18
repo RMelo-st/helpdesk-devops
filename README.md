@@ -135,6 +135,81 @@ docker stop helpdesk-api
 docker rm helpdesk-api
 docker exec -it helpdesk-api /bin/bash
 ```
+## 📊 Logs e Outputs
+
+### Exemplo de Logs da Aplicação
+
+```text
+[2026-06-18 10:30:45] INFO: Iniciando aplicação HelpDesk
+[2026-06-18 10:30:45] INFO: Conectando ao banco de dados SQLite
+[2026-06-18 10:30:46] INFO: Tabelas criadas com sucesso
+[2026-06-18 10:30:50] INFO: Chamado #1 criado - "Problema no sistema"
+[2026-06-18 10:31:15] INFO: Chamado #1 atualizado para status "Em andamento"
+[2026-06-18 10:31:30] INFO: Chamado #1 encerrado com sucesso
+```
+
+### Exemplo de Output da API
+
+```json
+{
+  "id": 1,
+  "titulo": "Problema no sistema",
+  "descricao": "Sistema apresentando lentidão",
+  "status": "Aberto",
+  "data_criacao": "2026-06-18T10:30:50"
+}
+```
+
+### Resultado Esperado da Aplicação
+
+Ao acessar a aplicação pelo navegador em:
+
+http://localhost:5000
+
+o usuário poderá:
+
+- Criar novos chamados;
+- Consultar chamados existentes;
+- Alterar o status dos chamados;
+- Excluir chamados;
+- Visualizar informações atualizadas em tempo real.
+
+---
+
+## 🚧 Dificuldades Enfrentadas
+
+Durante o desenvolvimento do projeto foram encontradas algumas dificuldades relacionadas à configuração do ambiente e à utilização das ferramentas DevOps.
+
+### 1. Configuração do Docker
+
+**Problema:** Primeiros testes apresentaram dificuldades na criação e execução da imagem Docker.
+
+**Solução:** Revisão do Dockerfile e utilização da documentação oficial para ajustes na configuração.
+
+### 2. Gerenciamento de Dependências
+
+**Problema:** Algumas bibliotecas apresentaram incompatibilidades entre versões.
+
+**Solução:** Definição de versões específicas no arquivo `requirements.txt`, garantindo maior estabilidade da aplicação.
+
+### 3. Integração entre Flask e Banco de Dados
+
+**Problema:** Erros iniciais na criação automática das tabelas e persistência dos dados.
+
+**Solução:** Ajustes na configuração do SQLAlchemy e validação da conexão com o banco SQLite.
+
+### 4. Aprendizado das Ferramentas DevOps
+
+**Problema:** Adaptação aos conceitos de containerização, versionamento e boas práticas de documentação.
+
+**Solução:** Estudo da documentação oficial do Docker, Git e GitHub, além de testes práticos durante o desenvolvimento.
+
+### Lições Aprendidas
+
+- Importância da documentação em projetos DevOps;
+- Benefícios da containerização para portabilidade;
+- Facilidade de replicação do ambiente utilizando Docker;
+- Melhor organização do código através do Git e GitHub.
 
 ## 📊 Conceitos DevOps Demonstrados
 
